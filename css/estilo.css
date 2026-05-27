@@ -1,7 +1,3 @@
-/* =========================
-   RESET
-========================= */
-
 *{
     margin: 0;
     padding: 0;
@@ -17,10 +13,6 @@ body{
     background-color: #f5f7fa;
     color: #1e293b;
 }
-
-/* =========================
-   PADRÃO
-========================= */
 
 .container{
     width: 90%;
@@ -60,10 +52,6 @@ section{
     color: #0f172a;
 }
 
-/* =========================
-   HEADER
-========================= */
-
 .header{
     width: 100%;
     background-color: white;
@@ -85,8 +73,6 @@ section{
     width: 85px;
 }
 
-/* MENU */
-
 .navbar .menu{
     display: flex;
     list-style: none;
@@ -104,8 +90,6 @@ section{
     color: #1d9bf0;
 }
 
-/* BOTÃO WHATSAPP */
-
 .btn-whatsapp{
     background: #1d9bf0;
     color: white;
@@ -119,10 +103,6 @@ section{
     background: #0f7fd1;
     transform: translateY(-2px);
 }
-
-/* =========================
-   BANNER / CARROSSEL
-========================= */
 
 .banner{
     margin-top: 95px;
@@ -199,10 +179,6 @@ section{
     background: #0f7fd1;
 }
 
-/* =========================
-   CATEGORIAS
-========================= */
-
 .categorias{
     background: white;
 }
@@ -261,10 +237,6 @@ section{
     border-radius: 10px;
 }
 
-/* =========================
-   PRODUTOS
-========================= */
-
 .produtos{
     background: #f8fafc;
 }
@@ -308,10 +280,6 @@ section{
     font-size: 22px;
     font-weight: 700;
 }
-
-/* =========================
-   SOBRE
-========================= */
 
 .sobre{
     background: white;
@@ -359,10 +327,6 @@ section{
     font-weight: 600;
 }
 
-/* =========================
-   DIFERENCIAIS
-========================= */
-
 .diferenciais{
     background: #f8fafc;
 }
@@ -395,10 +359,6 @@ section{
     line-height: 1.8;
 }
 
-/* =========================
-   VIDEO
-========================= */
-
 .video-section{
     padding: 100px 0;
     background: #f8fafc;
@@ -417,10 +377,6 @@ section{
     border: none;
 }
 
-/* =========================
-   MAPA
-========================= */
-
 .mapa{
     background: white;
     text-align: center;
@@ -433,10 +389,6 @@ section{
     border-radius: 20px;
     margin-top: 40px;
 }
-
-/* =========================
-   FOOTER
-========================= */
 
 .footer{
     background: #0f172a;
@@ -489,10 +441,6 @@ section{
     padding: 25px 0;
     color: #94a3b8;
 }
-
-/* =========================
-   RESPONSIVO
-========================= */
 
 @media(max-width: 1100px){
 

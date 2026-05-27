@@ -1,7 +1,3 @@
-/* =========================
-   BANNER CONTATO
-========================= */
-
 .banner-contato{
     width: 100%;
     height: 60vh;
@@ -42,10 +38,6 @@
     color: white;
 }
 
-/* =========================
-   CONTATO
-========================= */
-
 .contato-page{
     background: #f8fafc;
     padding: 100px 0;
@@ -57,10 +49,6 @@
     gap: 40px;
     align-items: start;
 }
-
-/* =========================
-   FORMULÁRIO
-========================= */
 
 .formulario-contato{
     background: white;
@@ -78,15 +66,11 @@
     color: #0f172a;
 }
 
-/* FORM */
-
 .formulario{
     display: flex;
     flex-direction: column;
     gap: 25px;
 }
-
-/* INPUT GROUP */
 
 .input-group{
     display: flex;
@@ -100,8 +84,6 @@
 
     color: #0f172a;
 }
-
-/* INPUTS */
 
 .input-group input,
 .input-group textarea,
@@ -133,14 +115,10 @@
     box-shadow: 0 0 0 4px rgba(29,155,240,0.12);
 }
 
-/* TEXTAREA */
-
 .input-group textarea{
     min-height: 180px;
     resize: vertical;
 }
-
-/* BOTÃO */
 
 .btn-enviar{
     width: 100%;
@@ -169,10 +147,6 @@
     box-shadow: 0 12px 30px rgba(37,99,235,0.25);
 }
 
-/* =========================
-   INFORMAÇÕES
-========================= */
-
 .info-contato{
     display: flex;
     flex-direction: column;
@@ -184,8 +158,6 @@
     margin-top: 10px;
     margin-bottom: 20px;
 }
-
-/* CARD INFO */
 
 .info-card{
     background: white;
@@ -217,10 +189,6 @@
     line-height: 1.8;
 }
 
-/* =========================
-   MAPA
-========================= */
-
 .mapa{
     background: white;
     padding: 0;
@@ -231,10 +199,6 @@
     height: 500px;
     border: none;
 }
-
-/* =========================
-   RESPONSIVO
-========================= */
 
 @media(max-width: 1100px){
 

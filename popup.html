@@ -8,7 +8,7 @@
 
     <title>Produto | Lima Uniformes</title>
 
-    <link rel="stylesheet" href="css/estilo.css">
+    
     <link rel="stylesheet" href="css/estilo_produtos.css">
 
     <!-- Fonte -->
@@ -26,20 +26,16 @@
 
         <div class="popup-container">
 
-            <!-- IMAGEM -->
             <div class="popup-imagem">
 
                 <div class="slider">
 
-                    <!-- BOTÃO ESQUERDA -->
                     <button id="prevBtn" class="slider-btn">
                         &#10094;
                     </button>
 
-                    <!-- IMAGEM -->
                     <img id="slider-img" src="" alt="Produto">
 
-                    <!-- BOTÃO DIREITA -->
                     <button id="nextBtn" class="slider-btn">
                         &#10095;
                     </button>
@@ -48,7 +44,6 @@
 
             </div>
 
-            <!-- INFORMAÇÕES -->
             <div class="popup-info">
 
                 <span class="mini-text">
@@ -99,10 +94,6 @@
 
     <script>
 
-        // =========================
-        // CAPTURA DOS PARÂMETROS
-        // =========================
-
         function getParametro(parametro) {
 
             const urlParametro = new URLSearchParams(window.location.search);
@@ -111,19 +102,12 @@
 
         }
 
-        // =========================
-        // PREENCHER TEXTO
-        // =========================
-
         document.getElementById("nome-produto").textContent =
             getParametro("nomeProduto");
 
         document.getElementById("desc-produto").textContent =
             getParametro("descProduto");
 
-        // =========================
-        // IMAGENS DO PRODUTO
-        // =========================
 
         const imagens = getParametro("imgProduto")
             ? getParametro("imgProduto").split(',')
@@ -143,9 +127,6 @@
 
         }
 
-        // =========================
-        // BOTÃO ANTERIOR
-        // =========================
 
         document.getElementById("prevBtn").addEventListener("click", () => {
 
@@ -161,9 +142,6 @@
 
         });
 
-        // =========================
-        // BOTÃO PRÓXIMO
-        // =========================
 
         document.getElementById("nextBtn").addEventListener("click", () => {
 
@@ -179,9 +157,6 @@
 
         });
 
-        // =========================
-        // PRIMEIRA IMAGEM
-        // =========================
 
         mostrarImagem();
 
