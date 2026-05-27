@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Contato | Lima Uniformes</title>
+
+    <link rel="stylesheet" href="../css/estilo.css">
+    <link rel="stylesheet" href="../css/contato.css">
+
+    <!-- Fonte -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+
+</head>
+
+<body>
+
+    <header class="header">
+
+        <div class="container header-container">
+
+            <a href="../index.html" class="logo-area">
+                <img src="../img/logo.png" alt="Lima Uniformes" class="logo">
+            </a>
+
+            <nav class="navbar">
+
+                <ul class="menu">
+
+                    <li><a href="../index.html">Home</a></li>
+
+                    <li><a href="produtos.html">Produtos</a></li>
+
+                    <li><a href="contato.html" class="active">Contato</a></li>
+
+                </ul>
+
+            </nav>
+
+            <a href="https://wa.me/5511940315366"
+                target="_blank"
+                class="btn-whatsapp">
+
+                Solicitar orçamento
+
+            </a>
+
+        </div>
+
+    </header>
+
+    <section class="banner-contato">
+
+        <img src="img/banner3.png"
+            alt="Banner Contato Lima Uniformes"
+            class="banner-contato-img">
+
+        <div class="overlay"></div>
+
+        <div class="banner-content">
+
+            <span class="mini-text">
+                Entre em contato
+            </span>
+
+            <h1>
+                Solicite seu orçamento personalizado
+            </h1>
+
+            <p>
+                Envie suas informações e nossa equipe entrará em contato.
+            </p>
+
+        </div>
+
+    </section>
+
+    <main class="contato-page">
+
+        <div class="container contato-container">
+
+            <div class="formulario-contato">
+
+                <span class="mini-text">
+                    Formulário
+                </span>
+
+                <h2>
+                    Fale com a Lima Uniformes
+                </h2>
+
+                <form action="https://formspree.io/f/xredzqdy"
+    method="POST"
+    class="formulario">
+
+    <!-- ASSUNTO (Formspree usa esse nome) -->
+    <input type="hidden" name="_subject" value="Novo orçamento - Lima Uniformes">
+
+    <!-- NOME -->
+    <div class="input-group">
+        <label>Nome completo</label>
+        <input type="text" name="nome" placeholder="Digite seu nome" required>
+    </div>
+
+    <!-- EMAIL -->
+    <div class="input-group">
+        <label>E-mail</label>
+        <input type="email" name="email" placeholder="Digite seu e-mail" required>
+    </div>
+
+    <!-- WHATSAPP -->
+    <div class="input-group">
+        <label>WhatsApp</label>
+        <input type="tel" name="whatsapp" placeholder="(11) 99999-9999" required>
+    </div>
+
+    <!-- EMPRESA -->
+    <div class="input-group">
+        <label>Empresa</label>
+        <input type="text" name="empresa" placeholder="Nome da empresa">
+    </div>
+
+    <!-- PRODUTO -->
+    <div class="input-group">
+        <label>Produto desejado</label>
+        <select name="produto">
+            <option>Uniforme Escolar</option>
+            <option>Uniforme Empresarial</option>
+            <option>Uniforme Esportivo</option>
+            <option>Camiseta Personalizada</option>
+            <option>Jaqueta</option>
+            <option>Moletom</option>
+            <option>Outro</option>
+        </select>
+    </div>
+
+    <!-- DESCRIÇÃO -->
+    <div class="input-group">
+        <label>Descreva seu pedido</label>
+        <textarea name="descricao"
+            placeholder="Descreva quantidade, modelo, cores..."
+            required></textarea>
+    </div>
+
+    <!-- BOTÃO -->
+    <button type="submit" class="btn-enviar">
+        Solicitar orçamento
+    </button>
+
+</form>
+            </div>
+
+            <!-- INFORMAÇÕES -->
+            <div class="info-contato">
+
+                <span class="mini-text">
+                    Atendimento
+                </span>
+
+                <h2>
+                    Informações de contato
+                </h2>
+
+                <div class="info-card">
+
+                    <h3>
+                        WhatsApp
+                    </h3>
+
+                    <p>
+                        (11) 94031-5366
+                    </p>
+
+                </div>
+
+                <div class="info-card">
+
+                    <h3>
+                        E-mail
+                    </h3>
+
+                    <p>
+                        limauniforme.uniforme@yahoo.com
+                    </p>
+
+                </div>
+
+                <div class="info-card">
+
+                    <h3>
+                        Localização
+                    </h3>
+
+                    <p>
+                        Santo André - SP
+                    </p>
+
+                </div>
+
+                <div class="info-card">
+
+                    <h3>
+                        Horário
+                    </h3>
+
+                    <p>
+                        Segunda a Sexta
+                        <br>
+                        08h às 18h
+                    </p>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </main>
+
+    <!-- MAPA -->
+    <section class="mapa">
+
+       <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3656.1766699601385!2d-46.48048!3d-23.597996100000003!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ce67cda4017adf%3A0x61f97e5f3dbc8b3a!2sR.%20%C3%82ngelo%20Malanga%2C%20462%20-%20Cidade%20S%C3%A3o%20Mateus%2C%20S%C3%A3o%20Paulo%20-%20SP%2C%2003960-030!5e0!3m2!1spt-BR!2sbr!4v1778968969639!5m2!1spt-BR!2sbr"
+            width="800"
+            height="600"
+            style="border:0;"
+            allowfullscreen=""
+            loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade">
+        </iframe>
+
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="footer">
+
+        <div class="container footer-container">
+
+            <div class="footer-logo">
+
+                <img src="../img/logo.png" alt="Lima Uniformes">
+
+                <p>
+                    Vestindo sua marca com qualidade e profissionalismo.
+                </p>
+
+            </div>
+
+            <div class="footer-links">
+
+                <h3>Links rápidos</h3>
+
+                <a href="../index.html">Home</a>
+                <a href="produtos.html">Produtos</a>
+                <a href="contato.html">Contato</a>
+
+            </div>
+
+            <div class="footer-contato">
+
+                <h3>Contato</h3>
+
+                <p>(11) 94031-5366</p>
+
+                <p>
+                    limauniforme.uniforme@yahoo.com
+                </p>
+
+            </div>
+
+        </div>
+
+        <div class="footer-bottom">
+
+            <p>
+                © 2026 Lima Uniformes - Todos os direitos reservados.
+            </p>
+
+        </div>
+
+    </footer>
+
+</body>
+
+</html>

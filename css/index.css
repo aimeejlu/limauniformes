@@ -1,0 +1,50 @@
+/* Estilização padrão da pagina*/
+body{
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+
+/*Estlização do HEADER da pagina*/
+header{
+    background-color: rgb(62, 184, 255);
+    padding: 20px 0 40px 0;
+}
+.logo{
+    width: 5%;
+    margin-left: 5%;
+}
+nav{
+    color: rgb(255, 255, 255);
+    top: 10%;
+    right: 2%;
+    position: absolute;
+    font-size: 150%;
+    font-family: fantasy;
+}
+nav li{
+    display: inline;
+    margin-right: 40px;
+}
+.divHeader{
+    position: relative;
+}
+/* Estilização de sobre nos*/
+.sobre_nos{
+    width: 70%;
+    margin-left: 15%;
+}
+.img_sobre_nos{
+    width: 15%;
+    float: left;
+
+}
+.titulo_sobre_nos{
+    clear: left;
+    text-align: center;
+}
+    
+.mapa{
+    text-align: center;
+    background: linear-gradient(#ffffff, #59a6ff);
+}

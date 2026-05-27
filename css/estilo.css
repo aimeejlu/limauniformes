@@ -1,0 +1,556 @@
+/* =========================
+   RESET
+========================= */
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+body{
+    font-family: 'Poppins', sans-serif;
+    background-color: #f5f7fa;
+    color: #1e293b;
+}
+
+/* =========================
+   PADRÃO
+========================= */
+
+.container{
+    width: 90%;
+    max-width: 1400px;
+    margin: auto;
+}
+
+a{
+    text-decoration: none;
+}
+
+img{
+    max-width: 100%;
+    display: block;
+}
+
+section{
+    padding: 90px 0;
+}
+
+.section-title{
+    text-align: center;
+    margin-bottom: 60px;
+}
+
+.section-title span{
+    color: #1d9bf0;
+    font-size: 15px;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+.section-title h2{
+    font-size: 42px;
+    margin-top: 10px;
+    color: #0f172a;
+}
+
+/* =========================
+   HEADER
+========================= */
+
+.header{
+    width: 100%;
+    background-color: white;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 999;
+    box-shadow: 0 2px 20px rgba(0,0,0,0.08);
+}
+
+.header-container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 95px;
+}
+
+.logo{
+    width: 85px;
+}
+
+/* MENU */
+
+.navbar .menu{
+    display: flex;
+    list-style: none;
+    gap: 40px;
+}
+
+.navbar .menu li a{
+    color: #0f172a;
+    font-size: 16px;
+    font-weight: 500;
+    transition: 0.3s;
+}
+
+.navbar .menu li a:hover{
+    color: #1d9bf0;
+}
+
+/* BOTÃO WHATSAPP */
+
+.btn-whatsapp{
+    background: #1d9bf0;
+    color: white;
+    padding: 14px 28px;
+    border-radius: 10px;
+    font-weight: 600;
+    transition: 0.3s;
+}
+
+.btn-whatsapp:hover{
+    background: #0f7fd1;
+    transform: translateY(-2px);
+}
+
+/* =========================
+   BANNER / CARROSSEL
+========================= */
+
+.banner{
+    margin-top: 95px;
+    position: relative;
+    overflow: hidden;
+}
+
+.slider{
+    position: relative;
+    width: 100%;
+    height: 90vh;
+}
+
+.slide{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    transition: opacity 1s ease;
+}
+
+.slide.active{
+    opacity: 1;
+    z-index: 1;
+}
+
+.slide img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    filter: brightness(45%);
+}
+
+.slide-text{
+    position: absolute;
+    top: 50%;
+    left: 8%;
+    transform: translateY(-50%);
+    color: white;
+    max-width: 700px;
+}
+
+.mini-text{
+    font-size: 14px;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    font-weight: 600;
+    color: #38bdf8;
+}
+
+.slide-text h1{
+    font-size: 65px;
+    line-height: 1.1;
+    margin: 20px 0;
+}
+
+.slide-text p{
+    font-size: 20px;
+    line-height: 1.7;
+    margin-bottom: 35px;
+    color: #e2e8f0;
+}
+
+.btn-banner{
+    background: #1d9bf0;
+    color: white;
+    padding: 16px 34px;
+    border-radius: 12px;
+    font-weight: 600;
+    transition: 0.3s;
+}
+
+.btn-banner:hover{
+    background: #0f7fd1;
+}
+
+/* =========================
+   CATEGORIAS
+========================= */
+
+.categorias{
+    background: white;
+}
+
+.categorias-grid{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 22px;
+}
+
+.categoria-card{
+    position: relative;
+    overflow: hidden;
+    border-radius: 18px;
+    cursor: pointer;
+
+    max-width: 260px;
+    margin: auto;
+
+    box-shadow: 0 8px 20px rgba(0,0,0,0.08);
+
+    transition: 0.3s;
+}
+
+.categoria-card:hover{
+    transform: translateY(-6px);
+}
+
+.categoria-card img{
+    width: 100%;
+    height: 280px;
+    object-fit: cover;
+    transition: 0.5s;
+}
+
+.categoria-card:hover img{
+    transform: scale(1.05);
+}
+
+.categoria-card h3{
+    position: absolute;
+    bottom: 18px;
+    left: 18px;
+
+    color: #000000;
+
+    font-size: 20px;
+    font-weight: 700;
+
+    z-index: 2;
+
+    background: rgba(255,255,255,0.92);
+
+    padding: 8px 14px;
+
+    border-radius: 10px;
+}
+
+/* =========================
+   PRODUTOS
+========================= */
+
+.produtos{
+    background: #f8fafc;
+}
+
+.produtos-grid{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 35px;
+}
+
+.produto-card{
+    background: white;
+    border-radius: 22px;
+    overflow: hidden;
+    transition: 0.4s;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.06);
+}
+
+.produto-card:hover{
+    transform: translateY(-10px);
+}
+
+.produto-card img{
+    width: 85%;
+    height: 400px;
+    object-fit: cover;
+
+    margin: 20px auto 0 auto;
+
+    border-radius: 14px;
+}
+
+.produto-card h3{
+    font-size: 24px;
+    padding: 25px 25px 10px;
+}
+
+.produto-card p{
+    padding: 0 25px 30px;
+    color: #1d9bf0;
+    font-size: 22px;
+    font-weight: 700;
+}
+
+/* =========================
+   SOBRE
+========================= */
+
+.sobre{
+    background: white;
+}
+
+.sobre-container{
+    display: flex;
+    align-items: center;
+    gap: 80px;
+}
+
+.sobre-img{
+    flex: 1;
+}
+
+.sobre-img img{
+    width: 100%;
+    max-width: 450px;
+}
+
+.sobre-text{
+    flex: 1;
+}
+
+.sobre-text h2{
+    font-size: 48px;
+    margin: 20px 0;
+    line-height: 1.2;
+}
+
+.sobre-text p{
+    font-size: 17px;
+    line-height: 1.9;
+    margin-bottom: 20px;
+    color: #475569;
+}
+
+.btn-sobre{
+    display: inline-block;
+    margin-top: 20px;
+    background: #1d9bf0;
+    color: white;
+    padding: 15px 32px;
+    border-radius: 12px;
+    font-weight: 600;
+}
+
+/* =========================
+   DIFERENCIAIS
+========================= */
+
+.diferenciais{
+    background: #f8fafc;
+}
+
+.diferenciais-grid{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 30px;
+}
+
+.diferencial-card{
+    background: white;
+    padding: 40px;
+    border-radius: 20px;
+    text-align: center;
+    transition: 0.3s;
+}
+
+.diferencial-card:hover{
+    transform: translateY(-8px);
+}
+
+.diferencial-card h3{
+    font-size: 24px;
+    margin-bottom: 15px;
+}
+
+.diferencial-card p{
+    color: #64748b;
+    line-height: 1.8;
+}
+
+/* =========================
+   VIDEO
+========================= */
+
+.video-section{
+    padding: 100px 0;
+    background: #f8fafc;
+}
+
+.video-container{
+    width: 100%;
+    border-radius: 25px;
+    overflow: hidden;
+    box-shadow: 0 15px 35px rgba(0,0,0,0.12);
+}
+
+.video-container iframe{
+    display: block;
+    width: 100%;
+    border: none;
+}
+
+/* =========================
+   MAPA
+========================= */
+
+.mapa{
+    background: white;
+    text-align: center;
+}
+
+.mapa iframe{
+    width: 100%;
+    height: 500px;
+    border: none;
+    border-radius: 20px;
+    margin-top: 40px;
+}
+
+/* =========================
+   FOOTER
+========================= */
+
+.footer{
+    background: #0f172a;
+    color: white;
+    padding-top: 80px;
+}
+
+.footer-container{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 50px;
+    padding-bottom: 50px;
+}
+
+.footer-logo img{
+    width: 100px;
+    margin-bottom: 20px;
+}
+
+.footer-logo p{
+    line-height: 1.8;
+    color: #cbd5e1;
+}
+
+.footer-links h3,
+.footer-contato h3{
+    margin-bottom: 20px;
+    font-size: 24px;
+}
+
+.footer-links a{
+    display: block;
+    margin-bottom: 15px;
+    color: #cbd5e1;
+    transition: 0.3s;
+}
+
+.footer-links a:hover{
+    color: #38bdf8;
+}
+
+.footer-contato p{
+    margin-bottom: 15px;
+    color: #cbd5e1;
+}
+
+.footer-bottom{
+    border-top: 1px solid rgba(255,255,255,0.08);
+    text-align: center;
+    padding: 25px 0;
+    color: #94a3b8;
+}
+
+/* =========================
+   RESPONSIVO
+========================= */
+
+@media(max-width: 1100px){
+
+    .categorias-grid,
+    .produtos-grid,
+    .diferenciais-grid{
+        grid-template-columns: repeat(2,1fr);
+    }
+
+    .sobre-container{
+        flex-direction: column;
+    }
+
+    .slide-text h1{
+        font-size: 50px;
+    }
+
+}
+
+@media(max-width: 768px){
+
+    .header-container{
+        flex-direction: column;
+        height: auto;
+        padding: 20px 0;
+        gap: 20px;
+    }
+
+    .navbar .menu{
+        gap: 20px;
+    }
+
+    .categorias-grid,
+    .produtos-grid,
+    .diferenciais-grid,
+    .footer-container{
+        grid-template-columns: 1fr;
+    }
+
+    .slide-text{
+        left: 5%;
+        right: 5%;
+    }
+
+    .slide-text h1{
+        font-size: 38px;
+    }
+
+    .slide-text p{
+        font-size: 16px;
+    }
+
+    .section-title h2{
+        font-size: 32px;
+    }
+
+    .sobre-text h2{
+        font-size: 34px;
+    }
+
+}

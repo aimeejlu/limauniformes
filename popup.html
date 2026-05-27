@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Produto | Lima Uniformes</title>
+
+    <link rel="stylesheet" href="../css/estilo.css">
+    <link rel="stylesheet" href="../css/estilo_produtos.css">
+
+    <!-- Fonte -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+
+</head>
+
+<body class="body-popup">
+
+    <main class="popup-main">
+
+        <div class="popup-container">
+
+            <!-- IMAGEM -->
+            <div class="popup-imagem">
+
+                <div class="slider">
+
+                    <!-- BOTÃO ESQUERDA -->
+                    <button id="prevBtn" class="slider-btn">
+                        &#10094;
+                    </button>
+
+                    <!-- IMAGEM -->
+                    <img id="slider-img" src="" alt="Produto">
+
+                    <!-- BOTÃO DIREITA -->
+                    <button id="nextBtn" class="slider-btn">
+                        &#10095;
+                    </button>
+
+                </div>
+
+            </div>
+
+            <!-- INFORMAÇÕES -->
+            <div class="popup-info">
+
+                <span class="mini-text">
+                    Lima Uniformes
+                </span>
+
+                <h1 id="nome-produto">
+                    Produto
+                </h1>
+
+                <p id="desc-produto" class="descricao-produto">
+                    Descrição do produto
+                </p>
+
+                <div class="popup-beneficios">
+
+                    <div class="beneficio">
+                        ✔ Alta qualidade
+                    </div>
+
+                    <div class="beneficio">
+                        ✔ Conforto premium
+                    </div>
+
+                    <div class="beneficio">
+                        ✔ Personalização disponível
+                    </div>
+
+                    <div class="beneficio">
+                        ✔ Produção profissional
+                    </div>
+
+                </div>
+
+                <a href="https://wa.me/5511940315366"
+                    target="_blank"
+                    class="btn-orcamento">
+
+                    Solicitar orçamento
+
+                </a>
+
+            </div>
+
+        </div>
+
+    </main>
+
+    <script>
+
+        // =========================
+        // CAPTURA DOS PARÂMETROS
+        // =========================
+
+        function getParametro(parametro) {
+
+            const urlParametro = new URLSearchParams(window.location.search);
+
+            return urlParametro.get(parametro);
+
+        }
+
+        // =========================
+        // PREENCHER TEXTO
+        // =========================
+
+        document.getElementById("nome-produto").textContent =
+            getParametro("nomeProduto");
+
+        document.getElementById("desc-produto").textContent =
+            getParametro("descProduto");
+
+        // =========================
+        // IMAGENS DO PRODUTO
+        // =========================
+
+        const imagens = getParametro("imgProduto")
+            ? getParametro("imgProduto").split(',')
+            : [];
+
+        let index = 0;
+
+        const sliderImg = document.getElementById("slider-img");
+
+        function mostrarImagem() {
+
+            if (imagens.length > 0) {
+
+                sliderImg.src = imagens[index];
+
+            }
+
+        }
+
+        // =========================
+        // BOTÃO ANTERIOR
+        // =========================
+
+        document.getElementById("prevBtn").addEventListener("click", () => {
+
+            index--;
+
+            if (index < 0) {
+
+                index = imagens.length - 1;
+
+            }
+
+            mostrarImagem();
+
+        });
+
+        // =========================
+        // BOTÃO PRÓXIMO
+        // =========================
+
+        document.getElementById("nextBtn").addEventListener("click", () => {
+
+            index++;
+
+            if (index >= imagens.length) {
+
+                index = 0;
+
+            }
+
+            mostrarImagem();
+
+        });
+
+        // =========================
+        // PRIMEIRA IMAGEM
+        // =========================
+
+        mostrarImagem();
+
+    </script>
+
+</body>
+
+</html>
